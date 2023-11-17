@@ -62,12 +62,12 @@
               console.log(info);
               var x ="";
               let h = 0;
-              $.each(info.trabajadores,function (i,iteracion){
+              $.each(info.sedes,function (i,iteracion){
                 x += "<tr>";
                 x += "<td>" + (h + 1) + "</td>";
-                x += "<td>" + iteracion.nombres + "</td>"
-                x += "<td>" + iteracion.correo + "</td>";
-                x += "<td><a href='masDetallesEquipoClausura.html?id=" + (iteracion.id) + "' class='btn btn-primary'>Detalles</a></td>";
+                x += "<td>" + iteracion.nombreSede + "</td>"
+                x += "<td>" + iteracion.direccion + "</td>";
+                x += "<td><a href='masDetallesEquipoClausura.html?id=" + (iteracion.idsede) + "' class='btn btn-primary'>Detalles</a></td>";
                 x += "</tr>";
                 h = h + 1;
 
